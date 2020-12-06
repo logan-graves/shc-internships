@@ -1,5 +1,5 @@
 # shc-internships
-#### a barebones site for shc student internships
+#### a bare-bones site for shc student internships
 This is the source code for my website. There is no functioning domain at the moment, but I will put something up once I get a solid draft of the site's design.
 
 ## Purpose
