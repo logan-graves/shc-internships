@@ -37,16 +37,44 @@ div {
   height: 40px;
 }
 
+
 #filter-by-text {
   float: left;
 }
 
 #subject-filter-button {
-  float: left
+  float: left;
+  background-color: #272727;
 }
 
 #grade-filter-button {
   float: left;
+  background-color: #272727;
+}
+
+#subject-dropdown-content {
+  width: 60px;
+  display: none;
+  position:absolute;
+}
+
+#subject-filter:hover #subject-dropdown-content {
+  display: block;
+}
+
+#grade-dropdown-content {
+  width: 60px;
+  display: none;
+  position:absolute;
+}
+
+#grade-filter:hover #grade-dropdown-content {
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
 .content-outer {
