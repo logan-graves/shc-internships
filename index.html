@@ -1,83 +1,59 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>SHC Internships Test Site</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-	<header class="title-bar">
-		<h2> SHC Internships Site </h2>
-	</header>
-	<nav id="sidebar-div">
-		<h3> Sidebar Title </h3>
-		<h4> First subtitle </h4>
-		<a href="placeholder"> placeholder </a> <br>
-				<a href="placeholder"> placeholder </a> <br>
-				<a href="placeholder"> placeholder </a> <br>
-			<h4> Second Subtitle </h4>
-        <a href="placeholder"> placeholder </a> <br>
-        <a href="placeholder"> placeholder </a> <br>
-        <a href="placeholder"> placeholder </a> <br>
-	    </nav>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div style="border-color:black; border-style:solid; border-width:1px; width=100%;"> 
+      <button class="box grade" id="grade-9" onclick="checkOrUncheck(this.id)"  style="color:transparent;"> ✓ </button>  <p>Grade 9</p>
+      <button class="box grade" id="grade-10" onclick="checkOrUncheck(this.id)" style="color:transparent;"> ✓ </button>  <p>Grade 10</p>
+      <button class="box grade" id="grade-11" onclick="checkOrUncheck(this.id)" style="color:transparent;"> ✓ </button>  <p>Grade 11</p>
+      <button class="box grade" id="grade-12" onclick="checkOrUncheck(this.id)" style="color:transparent;"> ✓ </button>  <p>Grade 12</p>
 
 
-      <div id="center-container">
-
-        <div id="filters-div">
-          <p id="filter-by-text"> Filter By: </p>
-            <div class="dropdown" id="subject-filter">
-              <div id="subject-filter-button"> subject </div>
-              <div id="subject-dropdown-content">
-                <button> button 1 </button>
-                <button> button 2 </button>
-                <button> button 3 </button>
-              </div>
-            </div>
-            <div class="dropdown" id="grade-filter">
-              <div id="grade-filter-button"> grade </div>
-              <div id="grade-dropdown-content">
-                <button> button 1 </button>
-                <button> button 2 </button>
-                <button> button 3 </button>
-            </div>
-        </div>
-
-        <div class="content-outer">
-          <div class="content-inner">
-            <img class="content-photo" alt="foo"></img>
-            <div class="content-info">
-              <h3> Internship Title </h3>
-              <h5> Company name </h5>
-              <p> Company Information </p>
-            </div>
-          </div>
-        </div>
-        <div class="content-outer">
-          <div class="content-inner">
-            <img class="content-photo" alt="foo"></img>
-            <div class="content-info">
-              <h3> Internship Title </h3>
-              <h5> Company name </h5>
-              <p> Company Information </p>
-            </div>
-          </div>
-        </div>
-        <div class="content-outer">
-          <div class="content-inner">
-            <img class="content-photo" alt="foo"></img>
-            <div class="content-info">
-              <h3> Internship Title </h3>
-              <h5> Company name </h5>
-              <p> Company Information </p>
-            </div>
-          </div>
+      <button class="box subject" id="math-science-engineering" onclick="checkOrUncheck(this.id)" style="color:transparent;"> ✓ </button>  <p>Math/Science/Engineering</p>
+      <button class="box subject" id="arts-language" onclick="checkOrUncheck(this.id)" style="color:transparent;"> ✓ </button>  <p>Arts/Language</p>
+      <button class="box subject" id="service" onclick="checkOrUncheck(this.id)" style="color:transparent;"> ✓ </button>  <p>Service</p>
+      <button class="box subject" id="government" onclick="checkOrUncheck(this.id)" style="color:transparent;"> ✓ </button>  <p>Government</p>
+      <button onclick="uncheckall()"> Uncheck all </button>
+    </div>
+    
+    <div class="content-outer m_s_e all">
+      <div class="content-inner">
+        <img class="content-photo" alt="foo" src="https://tenstrands.org/wp-content/uploads/cc_resize/lhs-logo-v2-250x0.png"></img>
+        <div class="content-info">
+          <h3> Lawrence Hall of Science </h3>
+          <h5> UC Berkley · <a href="https://www.lawrencehallofscience.org/get_involved/join_our_team/"> Link </a> </h5>
+          <p> Study many different STEM fields at the prestigious UC Berkley - everything from Geology, to Biology, to Technology. Check the website for more info. </p>
+          <p> <i> Thanks to Ms. Pacatte for this. </i> </p>
         </div>
       </div>
-    <script src="script.js"></script>
+    </div>
+    <div class="content-outer srv art all">
+      <div class="content-inner">
+        <img class="content-photo" alt="foo" src="https://826valencia.org/wordpress/wp-content/themes/valencia/img/826_valencia_logo.png"></img>
+        <div class="content-info">
+          <h3> 826 Valencia </h3>
+          <h5> 826 Valencia · <a href="https://826valencia.org/volunteer/internships/">Link</a> </h5>
+          <p> Good for students interested in language arts - help teach underserved kids to write more effectively! </p>
+          <p> <i> Thanks to Ms. Pacatte for this. </i> </p>
+        </div>
+      </div>
+    </div>
+    <div class="content-outer art all">
+      <div class="content-inner">
+        <img class="content-photo" alt="foo" src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/11062561_10153160117743069_2725991222233810062_n.png?_nc_cat=111&ccb=2&_nc_sid=09cbfe&_nc_ohc=iLBOI9B3e2YAX_1Wp5F&_nc_ht=scontent-sea1-1.xx&oh=4ab570012ad68275b822a856febc1413&oe=6048F011"></img>
+        <div class="content-info">
+          <h3> Teen Art Connect Internship </h3>
+          <h5> The Contemporary Jewish Museum · <a href="https://www.thecjm.org/programs/48">Link</a> </h5>
+          <p> "A year-long paid internship at The CJM for high school students from diverse backgrounds who are interested in working in a world-class arts environment to create meaningful experiences for the public, while developing professional skills." </p>
+        </div>
+      </div>
+    </div>
 
+    <script src="script.js"></script>
   </body>
 </html>
