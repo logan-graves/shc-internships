@@ -2,6 +2,9 @@
 #### a bare-bones site for shc student internships
 This is the source code for my website. There is no functioning domain at the moment, but I will put something up once I get a solid draft of the site's design.
 
+## About this project
+This is my 2020-2021 i2 project. It is my first web project with JS, so forgive any wildly inefficient/bloated solutions - I literally do not know any better. 
+
 ## Purpose
 Create a place where students at SHCP can look to find internship opportunities, without the hassle of searching, reading, and hoping that you found the right one, and without the often-necessary requirement of family connections. 
 
