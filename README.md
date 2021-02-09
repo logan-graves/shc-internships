@@ -7,3 +7,7 @@ Create a place where students at SHCP can look to find internship opportunities,
 
 ## Branches
 The `main` branch is for the basic html and styling CSS. The `development` branch is for in-progress changes; it doesn't work yet, so I'm waiting to merge the branches.
+
+Note: most development is happening on repl.it as I am not very comfortable with git yet. It may not look like I am making many commits; that is because Github is currently only for some basic version control. Once I have a working prototype it will take on more of a role.
+- [Main repl](https://repl.it/@logan0graves/SHC-Internships-Current)
+- [Development repl](https://repl.it/@logan0graves/Checkbox-Bar-Testing#script.js) (look here for most recent work)
