@@ -1,0 +1,58 @@
+/** Reset */
+h1, h2, h3, h4, h5, h6, div {
+  margin: 0; 
+  padding: 0; 
+}
+
+/** Set global font size */
+
+body {
+  font-family: sans-serif;
+}
+
+/** Basic div styling */
+
+div, table, nav {
+  border: 1px solid black;
+  box-shadow: 5px 5px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+h2 {
+  margin: 10px;
+  float:left;
+}
+
+/** Top Bar Styling **/
+
+
+.search-bar {
+  background-color: lightgray;
+  float: right;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.search-bar p, svg {
+  margin-right: 10px;
+}
+
+.search-bar svg {
+  margin: 5px;
+  height: 25px;
+  width: 25px;
+  vertical-align: middle;
+}
+
+#top-bar {
+  height: 50px;
+  width: 100%;
+  background-color: lightgoldenrodyellow;
+}
+
+#sidebar {
+  width: fit-content;
+}
+
