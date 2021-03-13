@@ -11,4 +11,4 @@ Create a place where students at SHCP can look to find internship opportunities,
 ## Branches
 The `main` branch is for the basic html and styling CSS. The `development` branch is for in-progress changes; it doesn't work yet, so I'm waiting to merge the branches.
 
-Update 2020-03-13: There's a prototype site now. The code is terrible, difficult to scale, looks bad, etc. but it's here. Proof-of-concept, I guess. I don't know what to use github for at all! love it
+*Update 2020-03-13: There's a prototype site now. The code is terrible, difficult to scale, looks bad, etc. but it's here. Proof-of-concept, I guess. I don't know what to use github for at all! love it*
