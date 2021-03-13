@@ -4,67 +4,124 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>SHC Internships Test Site</title>
+	<title>repl.it</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="theme.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-	<header class="title-bar">
-		<h2> SHC Internships Site </h2>
-	</header>
-	<nav id="sidebar-div">
-		<h3> Sidebar Title </h3>
-		<h4> First subtitle </h4>
-		<a href="placeholder"> placeholder </a> <br>
-				<a href="placeholder"> placeholder </a> <br>
-				<a href="placeholder"> placeholder </a> <br>
-			<h4> Second Subtitle </h4>
-        <a href="placeholder"> placeholder </a> <br>
-        <a href="placeholder"> placeholder </a> <br>
-        <a href="placeholder"> placeholder </a> <br>
-	    </nav>
+	<script src="script.js">
+	</script>
+	<!-- 
+  ### top search bar 
+-->
+	<table id="top-bar">
+		<tr>
+			<th>
+				<h2> SHC Internships List </h2>
+			</th>
+			<td>
+				<table class="search-bar">
+					<tr>
+						<td> <svg id="search-bar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 38" width="37" height="38">
+								<style>
+									tspan {
+										white-space: pre
+									}
+
+									.shp0 {
+										fill: none;
+										stroke: #000000;
+										stroke-width: 4.4
+									}
+
+									.shp1 {
+										fill: #000000
+									}
+								</style>
+								<path id="Shape 1" class="shp0" d="M22 27C15.36 27 10 21.64 10 15C10 8.36 15.36 3 22 3C28.64 3 34 8.36 34 15C34 21.64 28.64 27 22 27Z"
+								/>
+								<path id="Shape 2" class="shp1" d="M3.96 37.35L0.42 33.81L11.96 22.28L15.49 25.82L3.96 37.35Z" />
+							</svg> </td>
+						<td>
+							<p> type something... </p>
+						</td>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<!-- invisible flex box for the site info and content boxes -->
+	<div id="center-box">
+		<!-- 
+  ### Creating Sidebar - nav to make purpose obvious, table to align elements.
+   -->
+		<div> sideline
+			<nav id="sidebar">
+				<table style="margin: 0px; border:none;">
+					<tr>
+						<th>
+							<h3> Site Info </h3>
+						</th>
+						<tr>
+							<td>
+								<a href="user-guide.html"> User Guide </a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="about.html"> About </a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="contribute.html"> Contribute </a>
+							</td>
+						</tr>
+				</table>
+			</nav>
+		</div>
+		<div style="flex: 1; display: flex; flex-direction: column;">
+			<div> top <button class="box grade" id="grade-9" onclick="checkOrUncheck(this.id)"  style="color:transparent;"> ✓ </button>  <p>Grade 9</p> <button class="box grade" id="grade-10" onclick="checkOrUncheck(this.id)" style="color:transparent;"> ✓ </button>  <p>Grade 10</p> <button class="box grade" id="grade-11" onclick="checkOrUncheck(this.id)" style="color:transparent;"> ✓ </button>  <p>Grade 11</p> <button class="box grade" id="grade-12" onclick="checkOrUncheck(this.id)" style="color:transparent;"> ✓ </button>  <p>Grade 12</p>
 
 
-      <div id="center-container">
+      <button class="box subject" id="math-science-engineering" onclick="checkOrUncheck(this.id); displayContent()" style="color:transparent;"> ✓ </button>  <p>Math/Science/Engineering</p> <button class="box subject" id="arts-language" onclick="checkOrUncheck(this.id); displayContent()" style="color:transparent;"> ✓ </button>  <p>Arts/Language</p> <button class="box subject" id="service" onclick="checkOrUncheck(this.id); displayContent()" style="color:transparent;"> ✓ </button>  <p>Service</p> <button class="box subject" id="government" onclick="checkOrUncheck(this.id); displayContent()" style="color:transparent;"> ✓ </button> <p>Government</p> <button onclick="uncheckall()"> Uncheck all </button>
+      </div>
 
-        <div id="filters-div">
-          <p id="filter-by-text"> Filter By: </p>
-          <div id="subject-filter-button"> subject </div>
-          <div id="grade-filter-button"> grade </div>
-        </div>
-
-        <div class="content-outer">
+      <div style="flex:1;"> 
+        <div class="content-outer m_s_e all allgrades">
           <div class="content-inner">
-            <img class="content-photo" alt="foo"></img>
+            <img class="content-photo" alt="foo" src="https://tenstrands.org/wp-content/uploads/cc_resize/lhs-logo-v2-250x0.png"></img>
             <div class="content-info">
-              <h3> Internship Title </h3>
-              <h5> Company name </h5>
-              <p> Company Information </p>
+              <h3> Lawrence Hall of Science </h3>
+              <h5> UC Berkley · <a href="https://www.lawrencehallofscience.org/get_involved/join_our_team/"> Link </a> </h5>
+              <p> Study many different STEM fields at the prestigious UC Berkley - everything from Geology, to Biology, to Technology. Check the website for more info. </p>
+              <p> <i> Thanks to Ms. Pacatte for this. </i> </p>
             </div>
           </div>
         </div>
-        <div class="content-outer">
-          <div class="content-inner">
-            <img class="content-photo" alt="foo"></img>
-            <div class="content-info">
-              <h3> Internship Title </h3>
-              <h5> Company name </h5>
-              <p> Company Information </p>
-            </div>
-          </div>
-        </div>
-        <div class="content-outer">
-          <div class="content-inner">
-            <img class="content-photo" alt="foo"></img>
-            <div class="content-info">
-              <h3> Internship Title </h3>
-              <h5> Company name </h5>
-              <p> Company Information </p>
-            </div>
+        <div class="content-outer srv art all allgrades">
+        <div class="content-inner">
+          <img class="content-photo" alt="foo" src="https://826valencia.org/wordpress/wp-content/themes/valencia/img/826_valencia_logo.png"></img>
+          <div class="content-info">
+            <h3> 826 Valencia </h3>
+            <h5> 826 Valencia · <a href="https://826valencia.org/volunteer/internships/">Link</a> </h5>
+            <p> Good for students interested in language arts - help teach underserved kids to write more effectively! </p>
+            <p> <i> Thanks to Ms. Pacatte for this. </i> </p>
           </div>
         </div>
       </div>
-    <script src="script.js"></script>
-
+      <div class="content-outer art all allgrades">
+        <div class="content-inner">
+          <img class="content-photo" alt="foo" src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/11062561_10153160117743069_2725991222233810062_n.png?_nc_cat=111&ccb=2&_nc_sid=09cbfe&_nc_ohc=iLBOI9B3e2YAX_1Wp5F&_nc_ht=scontent-sea1-1.xx&oh=4ab570012ad68275b822a856febc1413&oe=6048F011"></img>
+          <div class="content-info">
+            <h3> Teen Art Connect Internship </h3>
+            <h5> The Contemporary Jewish Museum · <a href="https://www.thecjm.org/programs/48">Link</a> </h5>
+            <p> "A year-long paid internship at The CJM for high school students from diverse backgrounds who are interested in working in a world-class arts environment to create meaningful experiences for the public, while developing professional skills." </p>
+          </div>
+        </div>
+      </div> 
+    </div>
+    </div>
   </body>
 </html>
