@@ -11,4 +11,4 @@ Create a place where students at SHCP can look to find internship opportunities,
 ## Branches
 The `main` branch is for the basic html and styling CSS. The `development` branch is for in-progress changes; it doesn't work yet, so I'm waiting to merge the branches.
 
-Note: most development is happening on repl.it as I am not very comfortable with git yet. It may not look like I am making many commits; that is because Github is currently only for some basic version control. Once I have a working prototype it will take on more of a role. Here is the public [Development repl](https://repl.it/@logan0graves/Checkbox-Bar-Testing#script.js). In it, you will find the beginnings of the JS that will make the site run.
+Update 2020-03-13: There's a prototype site now. The code is terrible, difficult to scale, looks bad, etc. but it's here. Proof-of-concept, I guess. I don't know what to use github for at all! love it
